@@ -1,0 +1,18 @@
+
+# Directorios de compilación
+[D] bin/
+[D] obj/
+
+# Archivos de configuración de usuario
+*.user
+
+# Archivos de paquetes (si usas NuGet)
+packages/
+
+# Archivos de Visual Studio / IDE
+.vs/
+*.user
+
+# Carpetas de compilación
+*/[Bb]in/
+*/[Oo]bj/

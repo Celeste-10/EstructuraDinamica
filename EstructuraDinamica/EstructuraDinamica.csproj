@@ -58,6 +58,14 @@
     <Compile Include="Formularios\FrmPila.Designer.cs">
       <DependentUpon>FrmPila.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmPila2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPila2.Designer.cs">
+      <DependentUpon>FrmPila2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Expediente.cs" />
+    <Compile Include="Negocios\Beca.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPila.resx">
       <DependentUpon>FrmPila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPila2.resx">
+      <DependentUpon>FrmPila2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +85,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar-el-archivo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

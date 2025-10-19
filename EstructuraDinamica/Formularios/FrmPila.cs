@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,14 +56,18 @@ namespace EstructuraDinamica.Formularios
 
         private void btnMostrarUltimo_Click(object sender, EventArgs e)
         {
-            pila.Peek();
-            lblPila.Text = MostrarElementos();
+            try
+            {
+                MessageBox.Show($"{pila.Peek()}", "Ultimo elemento ingresado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Pila vacia", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
 
-        private string MostrarUltimo()
-        {
-            
-        }
+       
     }
 
 }

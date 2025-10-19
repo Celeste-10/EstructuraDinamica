@@ -34,7 +34,6 @@
             this.lblPila = new System.Windows.Forms.Label();
             this.btnQuitar = new System.Windows.Forms.Button();
             this.btnMostrarUltimo = new System.Windows.Forms.Button();
-            this.lblUltimo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -92,21 +91,11 @@
             this.btnMostrarUltimo.UseVisualStyleBackColor = true;
             this.btnMostrarUltimo.Click += new System.EventHandler(this.btnMostrarUltimo_Click);
             // 
-            // lblUltimo
-            // 
-            this.lblUltimo.AutoSize = true;
-            this.lblUltimo.Location = new System.Drawing.Point(34, 155);
-            this.lblUltimo.Name = "lblUltimo";
-            this.lblUltimo.Size = new System.Drawing.Size(104, 16);
-            this.lblUltimo.TabIndex = 6;
-            this.lblUltimo.Text = "Último elemento";
-            // 
             // FrmPila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 561);
-            this.Controls.Add(this.lblUltimo);
             this.Controls.Add(this.btnMostrarUltimo);
             this.Controls.Add(this.btnQuitar);
             this.Controls.Add(this.lblPila);
@@ -128,6 +117,5 @@
         private System.Windows.Forms.Label lblPila;
         private System.Windows.Forms.Button btnQuitar;
         private System.Windows.Forms.Button btnMostrarUltimo;
-        private System.Windows.Forms.Label lblUltimo;
     }
 }
